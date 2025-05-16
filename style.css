@@ -1,0 +1,741 @@
+*{
+    margin:0;
+    padding: 0;
+        font-family: 'Kanit', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+}
+.header{
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bg1.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}    
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.text-box h1{
+    font-size: 62px;
+    
+}
+
+.text-box p{
+    
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nax-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #ffa500;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: center;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        
+        
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        
+    }
+    .nav-links ul{
+        padding: 30px;
+        
+    }
+    
+    
+    
+}
+
+
+/*----- course -----*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+
+p{
+    color:#777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    
+    
+    
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    
+}
+.course-col{
+    flex-basis: 31%;
+    background: #6A2E2A;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    
+}
+
+.course-col:hover{
+    box-shadow: 0 0 100px 0px rgba(255,127,80);}
+    
+ 
+}
+.course-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+@media(max-width:700px){
+    .row{flex-direction: column;
+    }
+}
+/*------- campus ----*/
+.campus{
+    
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+    
+    
+    
+    
+    
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    
+    
+    
+    
+    
+}
+.layer:hover{
+    
+    
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    
+    
+    
+}
+.layer:hover h3{
+    
+    bottom: 49%;
+    opacity: 1;
+}
+/*----------- despre noi page --------*/
+.header1{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bg.png.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    
+    
+
+}
+.header1 h1 {
+    margin-top: -300px;
+    
+    
+}
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+    
+    
+    
+    
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    
+    
+    
+}
+.about-col img{
+    width: 100%s;
+    position:fixed;
+    
+}
+
+.about-col h1{
+    
+    
+    padding-top: 0;
+}
+.about-col h2{
+    padding: 50px;
+}
+.about-col p{
+    padding: 10px 0 25px;
+    
+    
+    
+}
+.red-btn{
+    border: 2px
+    solid #ff6600;
+    background: transparent;
+    color: "#ff6600";
+}
+.red-btn:hover{
+    color: #000000 ;
+
+    transition: 0.5s;
+    
+}
+
+.contact{
+position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/bg.png.jpg);
+    background-size: cover;
+    
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+    
+}
+.contact .content h1{
+    font-size: 36px;
+    font-weight: 500;
+    color:#fff;
+    
+    
+    
+    
+    
+}
+.contact .content p{
+    font-weight: 300;
+    color: #fff;
+    
+    
+}
+.container{
+    
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+    
+    
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    
+    
+}
+    
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    
+ 
+}
+.container .contactInfo .box .text{
+    
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+    
+    
+    
+    
+    
+    
+}
+.container .contactInfo .box .text{
+ font-weight: 500;
+    color: white;
+    
+    
+    
+    
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    
+    
+    
+    
+    
+}
+
+
+.contactForm h2{
+font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    
+    
+    
+
+    
+    
+    
+}
+.contactForm .inputBox
+{
+    
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+    
+.contactForm .inputBox input
+,.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    
+    
+    
+    
+}
+.contactForm .inputBox span{
+    
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s; 
+    color: #666;
+    
+    
+    
+    
+    
+    
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: red;
+    font-size: 12px;
+    transform: translateY(-20px);
+    
+    
+    
+    
+    
+    
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: teal;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    
+    
+}
+@media(max-width:991px){
+    .contact{
+padding: 50px;
+    }
+    .container;{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+.container .contactInfo
+    ,.contactForm{
+    width: 100%;
+}
+    
+}
+/*footer*/
+.footer{
+    width: 100%;
+        text-align: center;
+    padding: 30px 0;
+    
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    
+    
+    
+}
+    
+.fa-solid fa-heart{
+    color: sandybrown;
+
+}
+*{
+    box-sizing: border-box;
+    
+    
+}
+.ppt1{
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+    
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    
+    
+    
+}    
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+    
+}
+.text1{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-55%,-2250%);
+    text-align: center;
+}
+
+.ppt2{
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+      .text2{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-55%,-3700%);
+    text-align: center;
+}
+
+.ppt3{
+    
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+.text3{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-55%,-7800%);
+    text-align: center;
+}
+.ppt4{
+    
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+.text4{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-55%,-27600%);
+    text-align: center;
+}
+.ppt5{
+    
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+.text5{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-55%,-3650%);
+    text-align: center;
+}
+.ppt6{
+    
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+.text6{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-55%,-7300%);
+    text-align: center;
+}
+.ppt9{
+    
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+.text9{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-55%,-1200%);
+    text-align: center;
+}
+.ppt8{
+    
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+.text8{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%,-4500%);
+    text-align: center;
+}
+.ppt7{
+    
+min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images2/image1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    }
+.text7{
+    width: 100%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-70%,-7300%);
+    text-align: center;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+
